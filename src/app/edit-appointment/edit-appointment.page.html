@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Editar Formulario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="updateBookingForm" (ngSubmit)="updateForm()">
+      
+      <ion-item>
+        <ion-label position="floating">Nombre Completo: </ion-label>
+        <ion-input formControlName="nombreCompleto" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Dirección: </ion-label>
+        <ion-input formControlName="direccion" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nivel Educativo:</ion-label>
+        <ion-input formControlName="nivelEducativo" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Escuela donde estudias:</ion-label>
+        <ion-input formControlName="escuela" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Teléfono:</ion-label>
+        <ion-input formControlName="telefono" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Cuenta de correo electónico:</ion-label>
+        <ion-input formControlName="correoElectronico" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Cuenta de Instagram:</ion-label>
+        <ion-input formControlName="Instagram" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Cuenta de Facebook:</ion-label>
+        <ion-input formControlName="Facebook" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">1. ¿Qué carrera universitaria te gustaría estudiar?</ion-label>
+        <ion-input formControlName="pregunta1" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">2. ¿La carrera universitaria que quieres se relaciona con algo que realmente te apasiona? </ion-label>
+        <ion-input formControlName="pregunta2" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">3. ¿La carrera de tu interés está de moda? *</ion-label>
+        <ion-input formControlName="pregunta3" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">4. ¿Es realmente una decisión personal o te sientes presionado por las opiniones de los demás? *</ion-label>
+        <ion-input formControlName="pregunta4" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">5. ¿Ya investigaste cuales son las oportunidades de trabajo dentro de tu campo laboral? *</ion-label>
+        <ion-input formControlName="pregunta5" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">6. ¿Te gustaría especializarte? *</ion-label>
+        <ion-input formControlName="pregunta6" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">7. ¿Qué asignaturas te han gustado más en la preparatoria o cuales se te dan mejor? *</ion-label>
+        <ion-input formControlName="pregunta7" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">8. ¿Ya has asistido a alguna feria, expo o evento de carreras universitarias? *</ion-label>
+        <ion-input formControlName="pregunta8" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">9. ¿Ya has tomado talleres, cursos, platicas o conferencias que te ayuden a elegir tu carrera profesional? *</ion-label>
+        <ion-input formControlName="pregunta9" type="text" required>
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">10. ¿Te gustaría asistir a un evento que te oriente a la elección de tu carrera profesional? *</ion-label>
+        <ion-input formControlName="pregunta10" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Actualizar Formulario</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>
